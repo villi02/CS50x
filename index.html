@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+            document.addEventListener("DOMContentLoaded", function(){
+                let incorrect = document.querySelectorAll('.false');
+                let correct = document.querySelector('.true');
+
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = "#00ff00";
+                    for (let j = 0; j < incorrect.length; j++)
+                        {
+                            incorrect[j].style.backgroundColor = "red";
+                        }
+                    document.querySelector("#answer1").innerHTML = "Correct!!";
+                })
+
+
+                for (let i = 0; i < incorrect.length; i++)
+                {
+                    incorrect[i].addEventListener('click', function(){
+                        for (let j = 0; j < incorrect.length; j++)
+                        {
+                            incorrect[j].style.backgroundColor = "red";
+                        }
+                        correct.style.backgroundColor = "#00ff00";
+                        document.querySelector("#answer1").innerHTML = " your answer " + incorrect[i].innerHTML + " is incorrect!!";
+                    })
+                }
+
+
+
+                // make text appear
+
+            // multiple choice
+                let answer = document.querySelector('#answer');
+                answer.addEventListener('click', function() {
+
+                    let input = document.querySelector('#submit');
+                    input.addEventListener('click', function(){
+                        if (input.value === 'Mjolnir') {
+                            input.style.backgroundColor = '#00ff00';
+                            document.querySelector("#answer2").innerHTML = "Correct!!";
+                        }
+                        else
+                        {
+                            input.style.backgroundColor = "red";
+                            document.querySelector("#answer2").innerHTML = "Your answer " + "\"" + input.value + "\"" + " is incorrect!!";
+                        }
+                })
+
+
+                   // make message pop up under input box saying "correct!"
+                });
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <div class = "multiheader">
+                    <hr3>What year did the Titanic sink?</hr3>
+                </div>
+                <button class="false">1913</button>
+                <button class="true">1912</button>
+                <button class="false">1812</button>
+                <button class="false">2012</button>
+                <p id="answer1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <div class = "freeheader">
+                    <hr3>what is the name of Thor's hammer?</hr3>
+                </div>
+                <input id='submit' type='text'>
+                <button id='answer'>Submit answer</button>
+                <p id="answer2"></p>
+
+            </div>
+
+        </div>
+    </body>
+</html>
+
+<!--
+got some help from the following places:
+https://www.w3schools.com/jsref/met_document_queryselector.asp
+https://stackoverflow.com/questions/32027935/addeventlistener-is-not-a-function-why-does-this-error-occur 
+also other places, but unable to find links because forgot and cant find again, also discord!
+-->
