@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="dropmenu.css" rel="stylesheet">
+
+        <title>Villi's special side</title>
+
+        <script>
+
+        function menudrop() {
+                document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+
+
+
+            document.addEventListener("DOMContentLoaded", function(){
+
+
+            });
+        </script>
+    </head>
+    <body>
+
+        <div class="dropdown">
+          <button onclick="menudrop()" class="dropbtn">—<br>—<br>—  </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Main page</a>
+            <a href="History.html">The History of Villi</a>
+            <a href="sport.html">Villi's sport</a>
+            <a href="special.html">What makes Villi special</a>
+          </div>
+        </div>
+
+
+        <div class="jumbotron" style="background-color:#b11226">
+            <h1>What makes Villi special</h1>
+        </div>
+
+        
+        
+        <div>
+          <h2>List of things that make him special</h2>
+          <ul>
+            <li>Podcast host for <a href="https://open.spotify.com/show/0Q52oreXqgCVpX1yM1JPhT?si=a388be4e4fe34a43">"The Intellectual Experience"</a></li>
+            <li>Been an active part of the soccer community almost his entire life, player, coach and referre</li>
+            <li>Rejected from Harvard</li>
+            <li>Has <a href="https://youtu.be/XWMTnTgVfEc">raced to the edge of the world</a></li>
+            <li>Has been a part of a student organisation that designs, builds and launches rockets (as a first year student)</li>
+            <li>Has been a part of a student project where he made an app integrating AI (as a first year student) </li>
+            <li>Volunteered as a waiter for UKA (as a first year student)</li>
+            <li>Chose to have two additional subject during his first semester, all being advanced and one being intended for student at a significantly higher level</li>
+            <li>Started to take CS50 during his last year in high school</li>
+            <li>Been trading on the market in one form or another since 9th grade</li>
+            <li>Got rejected not only by Harvard, but from every school he wanted to attend, and still is working 2x everybody else is doing</li>
+            <li>Has opened himself up to his friends about mental health</li>
+            <li>Volunteered at an elderly home before the covid lockdown</li>
+            <li>Sold candy during his first year of middleschool, and was a part of his first company</li>
+            <li>Sold his very own ice tea in the school cafeteria during his last year in highschool</li>
+            <li>Was a co-founder of an app that sought to reduce the climate footpring of the user</li>
+            <li>Failed trying to sell gum during his first year of high school</li>
+            <li>Has dreams to work within the aerospace industry, and ambisions unparallelled with those around him</li>
+          </ul>
+        </div>
+
+
+
+
+    </body>
+</html>

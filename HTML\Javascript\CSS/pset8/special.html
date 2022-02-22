@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="dropmenu.css" rel="stylesheet">
+
+        <title>Villi's special side</title>
+        
+        <script>
+        
+        function menudrop() {
+                document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            
+            
+            
+            document.addEventListener("DOMContentLoaded", function(){
+                
+            let correct = document.querySelector('#correctanswer');    
+            let wrong = document.querySelector('#wronganswer');
+                wrong.addEventListener('click', function() { 
+                    correct.style.backgroundColor = "#D3D3D3";
+                    correct.style.color = "#D3D3D3";
+                    wrong.style.backgroundColor = "#D3D3D3";
+                    wrong.style.color = "#D3D3D3";
+                    document.querySelector('#strongtext').style.color = "#D3D3D3";
+                    
+                  document.querySelector("#alert").innerHTML =
+  "<strong>Wrong!</strong> You shall find the truth within, reload the page, and answer correctly ";
+                });
+                
+                correct.addEventListener('click', function() { 
+                    correct.style.backgroundColor = "#D3D3D3";
+                    correct.style.color = "#D3D3D3";
+                    wrong.style.backgroundColor = "#D3D3D3";
+                    wrong.style.color = "#D3D3D3";
+                    document.querySelector('#strongtext').style.color = "#D3D3D3";
+                    
+                    document.querySelector("#correctHeading").innerHTML =
+                        "Well done!!";
+                    document.querySelector("#correctBody").innerHTML =
+                        " You successfully completed the challenge! Click <a href=\"special1.html\" class=\"alert-link\">this</a> link to access the secret site";
+                    
+                });
+                
+                $(document).ready(function(){
+                $('#correctanswer').click(function(){
+                    $("#myAlert1").show('fade');
+                });
+                 
+                });
+                
+                $(document).ready(function(){
+                $('#wronganswer').click(function(){
+                    $("#myAlert").show('fade');
+                });
+                 
+                });
+            
+                
+            
+                
+            });
+        </script>
+    </head>
+    <body>
+        
+        <div class="dropdown">
+          <button onclick="menudrop()" class="dropbtn">—<br>—<br>— </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Main page</a>
+            <a href="History.html">The History of Villi</a>
+            <a href="sport.html">Villi's sport</a>
+            <a href="special.html">What makes Villi special</a>
+          </div>
+        </div>
+        
+        
+        <div class="jumbotron">
+            <h1>To procede you must answer correctly on one question</h1>
+        </div>
+       
+       <div id='menuchoice'>
+           <strong id='strongtext'>Is Villi special?</strong>
+           <div>
+              <button id="correctanswer">Yes</button>
+              <button id="wronganswer">No</button>
+        </div>
+       </div>
+        
+        <div id="myAlert" class="alert alert-danger collapse">
+          <p id="alert"></p>
+        </div>
+            
+        <div id="myAlert1" class="alert alert-success collapse">
+          <h4 class="alert-heading" id="correctHeading"></h4>
+          <p id="correctBody"></p>
+          <hr>
+          <p class="mb-0">Be sure to keep this a secret, as only people worthy enough to answer correctly are allowed</p>
+        </div>    
+
+
+
+    </body>
+</html>
+
+
+<!--
+got some help from the following places:
+https://www.youtube.com/watch?v=UTZjhCH80Zg
+i was unable to get the bootstrap alert to appear without the background color being constantly visible
+-->
