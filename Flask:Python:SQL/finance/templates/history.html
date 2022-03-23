@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<div>
+
+    <h2>All Stocks</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Action</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Date</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- TODO: Loop through the database entries to display them in this table -->
+            {% for stock in history %}
+                <tr>
+                    <td>{{ stock.symbol.upper() }}</td>
+                    <td>{{ stockname[stock.stock] }}</td>
+                    <td>{{ stock.action }}</td>
+                    <td>{{ stock.amount }}</td>
+                    <td>{{ stock.price | usd}}</td>
+                    <td>{{ stock.date }}</td>
+                    <td>{{ (stock.amount * stock.price) | usd }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+
+{% endblock %}

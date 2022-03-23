@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+<div>
+    <p>A share of {{ stock["name"] }} ({{ stock["symbol"] }}) costs {{ stock["price"] | usd }}</p>
+</div>
+
+<!--
+<div>
+    {{ stock }}
+</div>
+//-->
+{% endblock %}
