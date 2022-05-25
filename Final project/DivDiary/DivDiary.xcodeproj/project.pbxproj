@@ -15,12 +15,6 @@
 		333C828B2788874E006B9407 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C828A2788874E006B9407 /* SecondViewController.swift */; };
 		333C828D27888904006B9407 /* LogInnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C828C27888904006B9407 /* LogInnView.swift */; };
 		33A4F6BB278B04D600BA92EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33A4F6BA278B04D600BA92EF /* GoogleService-Info.plist */; };
-		33A4F6BE278B545C00BA92EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 33A4F6BD278B545C00BA92EF /* FirebaseAuth */; };
-		33A4F6C0278B545C00BA92EF /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 33A4F6BF278B545C00BA92EF /* FirebaseDatabase */; };
-		33A4F6C2278B545C00BA92EF /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 33A4F6C1278B545C00BA92EF /* FirebaseDatabaseSwift-Beta */; };
-		33A4F6C4278B545C00BA92EF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 33A4F6C3278B545C00BA92EF /* FirebaseStorage */; };
-		33A4F6C6278B545C00BA92EF /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 33A4F6C5278B545C00BA92EF /* FirebaseStorageCombine-Community */; };
-		33A4F6C8278B545C00BA92EF /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 33A4F6C7278B545C00BA92EF /* FirebaseStorageSwift-Beta */; };
 		33A4F6CC278B563B00BA92EF /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A4F6CA278B562400BA92EF /* libsqlite3.0.tbd */; };
 		33A4F6CD278B563B00BA92EF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A4F6CB278B562400BA92EF /* libsqlite3.tbd */; };
 		33A4F6D2278B5AAF00BA92EF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4F6D1278B5AAF00BA92EF /* SignUpViewController.swift */; };
@@ -49,13 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33A4F6C2278B545C00BA92EF /* FirebaseDatabaseSwift-Beta in Frameworks */,
-				33A4F6C4278B545C00BA92EF /* FirebaseStorage in Frameworks */,
 				33A4F6CD278B563B00BA92EF /* libsqlite3.tbd in Frameworks */,
-				33A4F6C6278B545C00BA92EF /* FirebaseStorageCombine-Community in Frameworks */,
-				33A4F6C0278B545C00BA92EF /* FirebaseDatabase in Frameworks */,
-				33A4F6BE278B545C00BA92EF /* FirebaseAuth in Frameworks */,
-				33A4F6C8278B545C00BA92EF /* FirebaseStorageSwift-Beta in Frameworks */,
 				33A4F6CC278B563B00BA92EF /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,12 +120,6 @@
 			);
 			name = DivDiary;
 			packageProductDependencies = (
-				33A4F6BD278B545C00BA92EF /* FirebaseAuth */,
-				33A4F6BF278B545C00BA92EF /* FirebaseDatabase */,
-				33A4F6C1278B545C00BA92EF /* FirebaseDatabaseSwift-Beta */,
-				33A4F6C3278B545C00BA92EF /* FirebaseStorage */,
-				33A4F6C5278B545C00BA92EF /* FirebaseStorageCombine-Community */,
-				33A4F6C7278B545C00BA92EF /* FirebaseStorageSwift-Beta */,
 			);
 			productName = DivDiary;
 			productReference = 333C827127888448006B9407 /* DivDiary.app */;
@@ -350,7 +332,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DivDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -377,7 +359,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DivDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -427,39 +409,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		33A4F6BD278B545C00BA92EF /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 33A4F6BC278B545C00BA92EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		33A4F6BF278B545C00BA92EF /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 33A4F6BC278B545C00BA92EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		33A4F6C1278B545C00BA92EF /* FirebaseDatabaseSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 33A4F6BC278B545C00BA92EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseDatabaseSwift-Beta";
-		};
-		33A4F6C3278B545C00BA92EF /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 33A4F6BC278B545C00BA92EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-		33A4F6C5278B545C00BA92EF /* FirebaseStorageCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 33A4F6BC278B545C00BA92EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseStorageCombine-Community";
-		};
-		33A4F6C7278B545C00BA92EF /* FirebaseStorageSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 33A4F6BC278B545C00BA92EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseStorageSwift-Beta";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 333C826927888448006B9407 /* Project object */;
 }

@@ -1,4 +1,3 @@
-import Firebase
 
 import UIKit
 
@@ -27,6 +26,7 @@ class LogInnView: UIViewController {
     }
     
     @IBAction func logInnTapped(_ sender: Any) {
+        
     }
     
 }
