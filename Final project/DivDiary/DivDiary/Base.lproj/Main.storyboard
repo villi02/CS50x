@@ -11,7 +11,7 @@
         <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="StartScreenViewController" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartVC" id="BYZ-38-t0r" customClass="StartScreenViewController" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="40" y="650" width="334" height="91"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wy-Om-pbF">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="dNF-wc-pex"/>
                                         </constraints>
@@ -31,7 +31,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMl-zs-Nvo">
-                                        <rect key="frame" x="0.0" y="60" width="334" height="31"/>
+                                        <rect key="frame" x="0.0" y="51" width="334" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="0mL-6q-T9Y"/>
                                         </constraints>
@@ -66,7 +66,7 @@
         <!--Log Inn View-->
         <scene sceneID="jiF-A5-UVS">
             <objects>
-                <viewController id="Mpq-vA-kV0" customClass="LogInnView" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInnVC" id="Mpq-vA-kV0" customClass="LogInnView" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t9W-nN-IeO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,10 +130,10 @@
             </objects>
             <point key="canvasLocation" x="2260.8695652173915" y="300.66964285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="bZK-Dq-eFO">
             <objects>
-                <viewController id="Ukk-Ri-soJ" customClass="ViewController" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="Ukk-Ri-soJ" customClass="HomeViewController" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MIx-gC-vTf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,7 +148,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="sNu-w6-YcD">
             <objects>
-                <viewController id="3GO-Wb-5wh" customClass="SignUpViewController" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" id="3GO-Wb-5wh" customClass="SignUpViewController" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ikV-C3-u2V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
