@@ -46,13 +46,13 @@ class SignUpViewController: UIViewController {
         }
             
         // Check if the password if secure
-        /*let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
         if Utilities.isPasswordValid(password: cleanedPassword) == false {
             //  Password isn't secure enough
             return "Please make sure your password is at least 8 characters, contains a special character an a number"
             }
-         */
+         
             return nil
         }
         
@@ -79,10 +79,11 @@ class SignUpViewController: UIViewController {
             
             // Create the user
             print("After this")
-            Auth.auth().createUser(withEmail: email, password: password) {(result, error) in
+            Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                 // Check for errors
                 if error != nil {
                     // There was an error
+                    print(error!)
                     self.showError("Error creating user")
                 }
                 else{
@@ -103,9 +104,6 @@ class SignUpViewController: UIViewController {
             
         }
             
-        }
-        
-    
-        // Transition to home screen
-    
+    }
+
 }
