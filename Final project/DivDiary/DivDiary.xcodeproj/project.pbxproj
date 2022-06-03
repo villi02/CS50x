@@ -48,6 +48,8 @@
 		33A4F6CD278B563B00BA92EF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A4F6CB278B562400BA92EF /* libsqlite3.tbd */; };
 		33A4F6D2278B5AAF00BA92EF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4F6D1278B5AAF00BA92EF /* SignUpViewController.swift */; };
 		33A4F6D4278B600E00BA92EF /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4F6D3278B600E00BA92EF /* StartScreenViewController.swift */; };
+		33D9BFF7284926BB001C904F /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFF6284926BB001C904F /* Stocks.swift */; };
+		33D9BFF9284A5270001C904F /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFF8284A5270001C904F /* Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		33A4F6CB278B562400BA92EF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		33A4F6D1278B5AAF00BA92EF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		33A4F6D3278B600E00BA92EF /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		33D9BFF6284926BB001C904F /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
+		33D9BFF8284A5270001C904F /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 			children = (
 				3329CADB283E221E00FF815E /* Utilities.swift */,
 				3329CB162841480B00FF815E /* Constants.swift */,
+				33D9BFF6284926BB001C904F /* Stocks.swift */,
+				33D9BFF8284A5270001C904F /* Stock.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -281,10 +287,12 @@
 				33A4F6D2278B5AAF00BA92EF /* SignUpViewController.swift in Sources */,
 				333C828D27888904006B9407 /* LogInnView.swift in Sources */,
 				333C827927888448006B9407 /* HomeViewController.swift in Sources */,
+				33D9BFF7284926BB001C904F /* Stocks.swift in Sources */,
 				333C827527888448006B9407 /* AppDelegate.swift in Sources */,
 				333C828B2788874E006B9407 /* SecondViewController.swift in Sources */,
 				3329CADC283E221E00FF815E /* Utilities.swift in Sources */,
 				333C827727888448006B9407 /* SceneDelegate.swift in Sources */,
+				33D9BFF9284A5270001C904F /* Stock.swift in Sources */,
 				3329CB172841480B00FF815E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
