@@ -50,6 +50,9 @@
 		33A4F6D4278B600E00BA92EF /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4F6D3278B600E00BA92EF /* StartScreenViewController.swift */; };
 		33D9BFF7284926BB001C904F /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFF6284926BB001C904F /* Stocks.swift */; };
 		33D9BFF9284A5270001C904F /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFF8284A5270001C904F /* Stock.swift */; };
+		33D9BFFB28535959001C904F /* DividendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFFA28535959001C904F /* DividendsViewController.swift */; };
+		33D9BFFD2853596A001C904F /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFFC2853596A001C904F /* PortfolioViewController.swift */; };
+		33D9BFFF285359F6001C904F /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFFE285359F6001C904F /* AccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +74,9 @@
 		33A4F6D3278B600E00BA92EF /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		33D9BFF6284926BB001C904F /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
 		33D9BFF8284A5270001C904F /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		33D9BFFA28535959001C904F /* DividendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendsViewController.swift; sourceTree = "<group>"; };
+		33D9BFFC2853596A001C904F /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		33D9BFFE285359F6001C904F /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,9 @@
 				33A4F6D1278B5AAF00BA92EF /* SignUpViewController.swift */,
 				33A4F6D3278B600E00BA92EF /* StartScreenViewController.swift */,
 				333C828C27888904006B9407 /* LogInnView.swift */,
+				33D9BFFA28535959001C904F /* DividendsViewController.swift */,
+				33D9BFFC2853596A001C904F /* PortfolioViewController.swift */,
+				33D9BFFE285359F6001C904F /* AccountViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -283,7 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D9BFFD2853596A001C904F /* PortfolioViewController.swift in Sources */,
 				33A4F6D4278B600E00BA92EF /* StartScreenViewController.swift in Sources */,
+				33D9BFFF285359F6001C904F /* AccountViewController.swift in Sources */,
+				33D9BFFB28535959001C904F /* DividendsViewController.swift in Sources */,
 				33A4F6D2278B5AAF00BA92EF /* SignUpViewController.swift in Sources */,
 				333C828D27888904006B9407 /* LogInnView.swift in Sources */,
 				333C827927888448006B9407 /* HomeViewController.swift in Sources */,
@@ -434,6 +446,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C39D5M9WDD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DivDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

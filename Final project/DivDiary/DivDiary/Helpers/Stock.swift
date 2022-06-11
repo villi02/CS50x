@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Stock {
+/* public class Stock {
     
     
     var name: String
@@ -15,3 +15,4 @@ public class Stock {
     var 
     
 }
+*/

@@ -13,6 +13,7 @@ struct Constants{
         static let startViewController = "StartVC"
         static let signUpViewController = "SignUpVC"
         static let logInnViewController = "LogInnVC"
+        static let tabBarViewController = "TabBarVC"
     }
     
    static let APIKey = "474c07c57cc0389e635aa53b7255508a"
