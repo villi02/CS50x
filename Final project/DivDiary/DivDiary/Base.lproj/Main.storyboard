@@ -20,7 +20,7 @@
                                 <rect key="frame" x="40" y="650" width="334" height="91"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wy-Om-pbF">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="dNF-wc-pex"/>
                                         </constraints>
@@ -31,7 +31,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMl-zs-Nvo">
-                                        <rect key="frame" x="0.0" y="51" width="334" height="40"/>
+                                        <rect key="frame" x="0.0" y="60" width="334" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="0mL-6q-T9Y"/>
                                         </constraints>
@@ -63,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="1526.0869565217392" y="27.455357142857142"/>
         </scene>
-        <!--Log Inn View-->
+        <!--back-->
         <scene sceneID="jiF-A5-UVS">
             <objects>
                 <viewController storyboardIdentifier="LogInnVC" id="Mpq-vA-kV0" customClass="LogInnView" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
@@ -118,7 +118,9 @@
                             <constraint firstItem="bb0-oD-6UT" firstAttribute="leading" secondItem="8QC-CU-utO" secondAttribute="leading" constant="40" id="aff-ft-Cop"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ghT-3S-Kwa"/>
+                    <navigationItem key="navigationItem" title="back" prompt="back" id="ghT-3S-Kwa">
+                        <barButtonItem key="backBarButtonItem" title="back" id="L0p-eW-qdT"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="erY-1E-wAz" id="3Jh-Dh-hiB"/>
                         <outlet property="errorLabel" destination="3sx-PO-KbC" id="3sC-K5-rSE"/>
@@ -130,7 +132,7 @@
             </objects>
             <point key="canvasLocation" x="2261" y="301"/>
         </scene>
-        <!--Home-->
+        <!--back-->
         <scene sceneID="bZK-Dq-eFO">
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="Ukk-Ri-soJ" customClass="HomeViewController" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
@@ -150,12 +152,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="zow-CW-GIJ"/>
+                    <navigationItem key="navigationItem" title="back" prompt="back" leftItemsSupplementBackButton="YES" id="778-wn-zke">
+                        <barButtonItem key="backBarButtonItem" title="back" id="HkH-E8-xNT"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTt-0s-u2N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3199" y="-631"/>
+            <point key="canvasLocation" x="3851" y="-635"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Title-->
         <scene sceneID="sNu-w6-YcD">
             <objects>
                 <viewController storyboardIdentifier="SignUpVC" id="3GO-Wb-5wh" customClass="SignUpViewController" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
@@ -226,6 +231,7 @@
                             <constraint firstItem="5Re-ot-XPd" firstAttribute="top" secondItem="u5O-a1-qWC" secondAttribute="top" constant="40" id="vSz-NS-LOi"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="2sf-vU-6Ma"/>
                     <connections>
                         <outlet property="emailTextField" destination="yfF-iy-7hR" id="34T-fx-psK"/>
                         <outlet property="errorLabel" destination="cSW-ic-FJf" id="VA9-g2-2lA"/>
@@ -270,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pzx-ls-7oO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3199" y="706"/>
+            <point key="canvasLocation" x="3852" y="682"/>
         </scene>
         <!--Portfolio-->
         <scene sceneID="pUJ-eC-dmM">
@@ -295,7 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Is8-d7-1Lg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3962" y="-362"/>
+            <point key="canvasLocation" x="4628" y="-362"/>
         </scene>
         <!--Dividends-->
         <scene sceneID="fXB-LR-yf7">
@@ -311,13 +317,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bD3-Ce-Xs4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3961" y="301"/>
+            <point key="canvasLocation" x="4628" y="301"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="L5f-Pd-nx1">
             <objects>
                 <tabBarController storyboardIdentifier="TabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="oQx-5W-ggV" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hNQ-Da-jCP"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pHJ-C9-9gJ">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
@@ -331,7 +338,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VUT-QI-gQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3198.5507246376815" y="27.455357142857142"/>
+            <point key="canvasLocation" x="3612" y="27"/>
         </scene>
     </scenes>
     <resources>

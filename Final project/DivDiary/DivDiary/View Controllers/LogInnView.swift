@@ -30,10 +30,11 @@ class LogInnView: UIViewController {
     
     func transitionToHomescreen() {
         
-        let homeViewController =  storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.tabBarViewController) as? HomeViewController
+        let homeViewController =  storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.tabBarViewController) as? UITabBarController
         
         view.window?.rootViewController = homeViewController
         view?.window?.makeKeyAndVisible()
+        
     }
     
     func setUpElements() {
@@ -55,12 +56,10 @@ class LogInnView: UIViewController {
                 self.showError("Unable to sign in")
             }
             else{
-                print("After this:")
-                testStockAPI()
+                // testStockAPI()
                 self.transitionToHomescreen()
             }
         }
-        
     }
     
 }

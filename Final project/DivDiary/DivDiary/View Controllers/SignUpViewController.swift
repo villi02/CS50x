@@ -31,10 +31,11 @@ class SignUpViewController: UIViewController {
     
     func transitionToHomescreen() {
         
-        let homeViewController =  storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.tabBarViewController) as? HomeViewController
+        let homeViewController =  storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.tabBarViewController) as? UITabBarController
         
         view.window?.rootViewController = homeViewController
         view?.window?.makeKeyAndVisible()
+        
     }
     
     // A method to validate that all fields have an input
