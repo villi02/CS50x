@@ -56,7 +56,7 @@ class LogInnView: UIViewController {
                 self.showError("Unable to sign in")
             }
             else{
-                // testStockAPI()
+                //testStockAPI()
                 self.transitionToHomescreen()
             }
         }

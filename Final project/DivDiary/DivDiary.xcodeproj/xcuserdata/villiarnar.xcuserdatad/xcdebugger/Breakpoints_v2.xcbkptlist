@@ -52,5 +52,69 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87F24AA7-5363-4BE0-AD32-2C55FA4F23C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DivDiaryTests/DivDiaryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "testsJSONtoStruct()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5BE8D17-7068-4E78-8E81-104501155428"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DivDiaryTests/DivDiaryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "testsJSONtoStruct()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E5BE8D17-7068-4E78-8E81-104501155428 - 70e0eb388cf25db5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DivDiaryTests.DivDiaryTests.testsJSONtoStruct() -&gt; ()"
+                  moduleName = "DivDiaryTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/villiarnar/Library/Mobile%20Documents/com~apple~CloudDocs/UNI%201/edX/CS50/CS50x/Final%20project/DivDiary/DivDiaryTests/DivDiaryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1116">
+               </Location>
+               <Location
+                  uuid = "E5BE8D17-7068-4E78-8E81-104501155428 - 70e0eb388cf25db5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DivDiaryTests.DivDiaryTests.testsJSONtoStruct() -&gt; ()"
+                  moduleName = "DivDiaryTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/villiarnar/Library/Mobile%20Documents/com~apple~CloudDocs/UNI%201/edX/CS50/CS50x/Final%20project/DivDiary/DivDiaryTests/DivDiaryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

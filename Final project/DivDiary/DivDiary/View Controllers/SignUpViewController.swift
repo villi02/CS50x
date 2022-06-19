@@ -17,6 +17,8 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var backButton: UINavigationItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--Start Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="StartVC" id="BYZ-38-t0r" customClass="StartScreenViewController" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4XC-Rb-rbw">
-                                <rect key="frame" x="40" y="650" width="334" height="91"/>
+                                <rect key="frame" x="40" y="634" width="334" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wy-Om-pbF">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="88"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="dNF-wc-pex"/>
                                         </constraints>
@@ -31,9 +31,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMl-zs-Nvo">
-                                        <rect key="frame" x="0.0" y="60" width="334" height="31"/>
+                                        <rect key="frame" x="0.0" y="108" width="334" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="0mL-6q-T9Y"/>
+                                            <constraint firstAttribute="height" constant="20" id="0mL-6q-T9Y"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign up"/>
@@ -48,12 +48,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4XC-Rb-rbw" secondAttribute="trailing" constant="40" id="CqS-aA-EO7"/>
-                            <constraint firstItem="4XC-Rb-rbw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="606" id="R09-XG-Nze"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4XC-Rb-rbw" secondAttribute="bottom" constant="40" id="UZ5-ll-hkP"/>
+                            <constraint firstItem="4XC-Rb-rbw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="546" id="R09-XG-Nze"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4XC-Rb-rbw" secondAttribute="bottom" constant="100" id="UZ5-ll-hkP"/>
                             <constraint firstItem="4XC-Rb-rbw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="s0a-jo-Zcw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="hdb-JC-dk5"/>
+                    <navigationItem key="navigationItem" id="hdb-JC-dk5"/>
                     <connections>
                         <outlet property="logInnButton" destination="7Wy-Om-pbF" id="H0n-6M-mIk"/>
                         <outlet property="signUpButton" destination="wMl-zs-Nvo" id="WKR-Lu-T7N"/>
@@ -63,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="1526.0869565217392" y="27.455357142857142"/>
         </scene>
-        <!--back-->
+        <!--Log Inn View-->
         <scene sceneID="jiF-A5-UVS">
             <objects>
                 <viewController storyboardIdentifier="LogInnVC" id="Mpq-vA-kV0" customClass="LogInnView" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,7 +72,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bb0-oD-6UT">
-                                <rect key="frame" x="40" y="84" width="334" height="200.5"/>
+                                <rect key="frame" x="40" y="128" width="334" height="200.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="erY-1E-wAz">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
@@ -118,9 +118,7 @@
                             <constraint firstItem="bb0-oD-6UT" firstAttribute="leading" secondItem="8QC-CU-utO" secondAttribute="leading" constant="40" id="aff-ft-Cop"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="back" prompt="back" id="ghT-3S-Kwa">
-                        <barButtonItem key="backBarButtonItem" title="back" id="L0p-eW-qdT"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="ghT-3S-Kwa"/>
                     <connections>
                         <outlet property="emailTextField" destination="erY-1E-wAz" id="3Jh-Dh-hiB"/>
                         <outlet property="errorLabel" destination="3sx-PO-KbC" id="3sC-K5-rSE"/>
@@ -139,15 +137,6 @@
                     <view key="view" contentMode="scaleToFill" id="MIx-gC-vTf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4y-L5-rQR">
-                                <rect key="frame" x="184" y="438" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SVZ-Zy-k8q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -160,7 +149,7 @@
             </objects>
             <point key="canvasLocation" x="3851" y="-635"/>
         </scene>
-        <!--Title-->
+        <!--Sign Up View Controller-->
         <scene sceneID="sNu-w6-YcD">
             <objects>
                 <viewController storyboardIdentifier="SignUpVC" id="3GO-Wb-5wh" customClass="SignUpViewController" customModule="DivDiary" customModuleProvider="target" sceneMemberID="viewController">
@@ -169,7 +158,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Re-ot-XPd">
-                                <rect key="frame" x="40" y="84" width="334" height="320.5"/>
+                                <rect key="frame" x="40" y="128" width="334" height="320.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Frist Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lGL-Py-4ca">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
@@ -231,8 +220,9 @@
                             <constraint firstItem="5Re-ot-XPd" firstAttribute="top" secondItem="u5O-a1-qWC" secondAttribute="top" constant="40" id="vSz-NS-LOi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="2sf-vU-6Ma"/>
+                    <navigationItem key="navigationItem" id="2sf-vU-6Ma"/>
                     <connections>
+                        <outlet property="backButton" destination="2sf-vU-6Ma" id="yjo-aB-kp1"/>
                         <outlet property="emailTextField" destination="yfF-iy-7hR" id="34T-fx-psK"/>
                         <outlet property="errorLabel" destination="cSW-ic-FJf" id="VA9-g2-2lA"/>
                         <outlet property="firstNameTextField" destination="lGL-Py-4ca" id="GCG-ca-CFk"/>
@@ -248,12 +238,16 @@
         <!--Navigation Controller-->
         <scene sceneID="SVq-52-ZjU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="6rW-JD-L4X" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6rW-JD-L4X" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CMS-pf-hyO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bt9-ur-aak">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AUI-tA-Jx0"/>
                     </connections>
@@ -326,6 +320,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="hNQ-Da-jCP"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pHJ-C9-9gJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                     </tabBar>

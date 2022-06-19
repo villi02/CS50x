@@ -17,6 +17,8 @@ class StartScreenViewController: UIViewController {
     
     func setUpElements() {
         view.backgroundColor = .systemRed
+        testStockAPI(symbol: "O")
+        
     }
   
 

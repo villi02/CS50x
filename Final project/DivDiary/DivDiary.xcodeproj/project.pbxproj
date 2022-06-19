@@ -53,7 +53,19 @@
 		33D9BFFB28535959001C904F /* DividendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFFA28535959001C904F /* DividendsViewController.swift */; };
 		33D9BFFD2853596A001C904F /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFFC2853596A001C904F /* PortfolioViewController.swift */; };
 		33D9BFFF285359F6001C904F /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFFE285359F6001C904F /* AccountViewController.swift */; };
+		33D9C0012854F505001C904F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9C0002854F504001C904F /* User.swift */; };
+		33FDB58C285A1F49000ED1A0 /* DivDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDB58B285A1F49000ED1A0 /* DivDiaryTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33FDB58D285A1F4A000ED1A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 333C826927888448006B9407 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 333C827027888448006B9407;
+			remoteInfo = DivDiary;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3329CADB283E221E00FF815E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -77,6 +89,9 @@
 		33D9BFFA28535959001C904F /* DividendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendsViewController.swift; sourceTree = "<group>"; };
 		33D9BFFC2853596A001C904F /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		33D9BFFE285359F6001C904F /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		33D9C0002854F504001C904F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		33FDB589285A1F49000ED1A0 /* DivDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DivDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33FDB58B285A1F49000ED1A0 /* DivDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivDiaryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +131,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33FDB586285A1F49000ED1A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -126,6 +148,7 @@
 				3329CB162841480B00FF815E /* Constants.swift */,
 				33D9BFF6284926BB001C904F /* Stocks.swift */,
 				33D9BFF8284A5270001C904F /* Stock.swift */,
+				33D9C0002854F504001C904F /* User.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -134,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				333C827327888448006B9407 /* DivDiary */,
+				33FDB58A285A1F49000ED1A0 /* DivDiaryTests */,
 				333C827227888448006B9407 /* Products */,
 				33A4F6C9278B562300BA92EF /* Frameworks */,
 			);
@@ -143,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				333C827127888448006B9407 /* DivDiary.app */,
+				33FDB589285A1F49000ED1A0 /* DivDiaryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +209,14 @@
 				33D9BFFE285359F6001C904F /* AccountViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		33FDB58A285A1F49000ED1A0 /* DivDiaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				33FDB58B285A1F49000ED1A0 /* DivDiaryTests.swift */,
+			);
+			path = DivDiaryTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +268,24 @@
 			productReference = 333C827127888448006B9407 /* DivDiary.app */;
 			productType = "com.apple.product-type.application";
 		};
+		33FDB588285A1F49000ED1A0 /* DivDiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33FDB591285A1F4A000ED1A0 /* Build configuration list for PBXNativeTarget "DivDiaryTests" */;
+			buildPhases = (
+				33FDB585285A1F49000ED1A0 /* Sources */,
+				33FDB586285A1F49000ED1A0 /* Frameworks */,
+				33FDB587285A1F49000ED1A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33FDB58E285A1F4A000ED1A0 /* PBXTargetDependency */,
+			);
+			name = DivDiaryTests;
+			productName = DivDiaryTests;
+			productReference = 33FDB589285A1F49000ED1A0 /* DivDiaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -245,11 +296,15 @@
 				KnownAssetTags = (
 					button,
 				);
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					333C827027888448006B9407 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					33FDB588285A1F49000ED1A0 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 333C827027888448006B9407;
 					};
 				};
 			};
@@ -270,6 +325,7 @@
 			projectRoot = "";
 			targets = (
 				333C827027888448006B9407 /* DivDiary */,
+				33FDB588285A1F49000ED1A0 /* DivDiaryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -282,6 +338,13 @@
 				333C827E2788844C006B9407 /* Assets.xcassets in Resources */,
 				333C827C27888448006B9407 /* Main.storyboard in Resources */,
 				3329CADE283E381300FF815E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33FDB587285A1F49000ED1A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +363,7 @@
 				333C828D27888904006B9407 /* LogInnView.swift in Sources */,
 				333C827927888448006B9407 /* HomeViewController.swift in Sources */,
 				33D9BFF7284926BB001C904F /* Stocks.swift in Sources */,
+				33D9C0012854F505001C904F /* User.swift in Sources */,
 				333C827527888448006B9407 /* AppDelegate.swift in Sources */,
 				333C828B2788874E006B9407 /* SecondViewController.swift in Sources */,
 				3329CADC283E221E00FF815E /* Utilities.swift in Sources */,
@@ -309,7 +373,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33FDB585285A1F49000ED1A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FDB58C285A1F49000ED1A0 /* DivDiaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33FDB58E285A1F4A000ED1A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 333C827027888448006B9407 /* DivDiary */;
+			targetProxy = 33FDB58D285A1F4A000ED1A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		333C827A27888448006B9407 /* Main.storyboard */ = {
@@ -494,6 +574,44 @@
 			};
 			name = Release;
 		};
+		33FDB58F285A1F4A000ED1A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C39D5M9WDD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DivDiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DivDiary.app/DivDiary";
+			};
+			name = Debug;
+		};
+		33FDB590285A1F4A000ED1A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C39D5M9WDD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DivDiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DivDiary.app/DivDiary";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -511,6 +629,15 @@
 			buildConfigurations = (
 				333C82862788844C006B9407 /* Debug */,
 				333C82872788844C006B9407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33FDB591285A1F4A000ED1A0 /* Build configuration list for PBXNativeTarget "DivDiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33FDB58F285A1F4A000ED1A0 /* Debug */,
+				33FDB590285A1F4A000ED1A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
