@@ -75,8 +75,6 @@ class SignUpViewController: UIViewController {
         else {
             
             // Create cleaned versions of the data
-            let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
@@ -93,7 +91,7 @@ class SignUpViewController: UIViewController {
                     // User was created succesfully, now store first an last name
                     let db = Firestore.firestore()
                     
-                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid":result!.user.uid]){ (err) in
+                    db.collection("users").addDocument(data: ["uid":result!.user.uid]){ (err) in
                         
                         if err != nil{
                             // Show error message

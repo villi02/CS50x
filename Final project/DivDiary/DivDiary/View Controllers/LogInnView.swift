@@ -2,6 +2,8 @@
 import UIKit
 import FirebaseFirestore
 import FirebaseAuth
+import Firebase
+import FirebaseDatabaseSwift
 
 class LogInnView: UIViewController {
     
@@ -43,6 +45,7 @@ class LogInnView: UIViewController {
     }
     
     @IBAction func logInnTapped(_ sender: Any) {
+        //self.transitionToHomescreen()
         
         // Validate textfields
         
@@ -56,7 +59,23 @@ class LogInnView: UIViewController {
                 self.showError("Unable to sign in")
             }
             else{
-                //testStockAPI()
+                //testStockAPI(symbol: "AAPL")
+                
+                let userID: String = (Auth.auth().currentUser?.uid)!
+                var ref: DatabaseReference!
+                
+                print(userID)
+
+                ref = Database.database().reference()
+                
+                ref?.child("users").child("buUuCUD0gsJgzfthVmXM").observeSingleEvent(of: .value, with: {(snapshot) in
+                    print(snapshot.value as! [String: AnyObject])
+                })
+                
+                /*
+                User.init(email_user: currentUser.email, password_user: password, uid_user: currentUser.uid, portfolio_User: currentUser.portfo )
+                 */
+                
                 self.transitionToHomescreen()
             }
         }

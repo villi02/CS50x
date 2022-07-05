@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3322DACB28610C7D00838580 /* DividendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3322DACA28610C7D00838580 /* DividendView.swift */; };
+		3322DACF286488C900838580 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3322DACE286488C900838580 /* Test.swift */; };
 		3329CADC283E221E00FF815E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3329CADB283E221E00FF815E /* Utilities.swift */; };
 		3329CADE283E381300FF815E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3329CADD283E381300FF815E /* GoogleService-Info.plist */; };
 		3329CAE1283E439100FF815E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3329CAE0283E439100FF815E /* FirebaseAnalytics */; };
@@ -48,12 +50,14 @@
 		33A4F6CD278B563B00BA92EF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A4F6CB278B562400BA92EF /* libsqlite3.tbd */; };
 		33A4F6D2278B5AAF00BA92EF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4F6D1278B5AAF00BA92EF /* SignUpViewController.swift */; };
 		33A4F6D4278B600E00BA92EF /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4F6D3278B600E00BA92EF /* StartScreenViewController.swift */; };
+		33BA84D028733886008A4FF6 /* StocksNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BA84CF28733886008A4FF6 /* StocksNew.swift */; };
 		33D9BFF7284926BB001C904F /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFF6284926BB001C904F /* Stocks.swift */; };
 		33D9BFF9284A5270001C904F /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFF8284A5270001C904F /* Stock.swift */; };
 		33D9BFFB28535959001C904F /* DividendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFFA28535959001C904F /* DividendsViewController.swift */; };
 		33D9BFFD2853596A001C904F /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFFC2853596A001C904F /* PortfolioViewController.swift */; };
 		33D9BFFF285359F6001C904F /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFFE285359F6001C904F /* AccountViewController.swift */; };
 		33D9C0012854F505001C904F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9C0002854F504001C904F /* User.swift */; };
+		33E764A6285FBB5200B8B9DB /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E764A5285FBB5200B8B9DB /* StockView.swift */; };
 		33FDB58C285A1F49000ED1A0 /* DivDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDB58B285A1F49000ED1A0 /* DivDiaryTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +72,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3322DACA28610C7D00838580 /* DividendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendView.swift; sourceTree = "<group>"; };
+		3322DACE286488C900838580 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		3329CADB283E221E00FF815E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3329CADD283E381300FF815E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3329CB162841480B00FF815E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -84,12 +90,14 @@
 		33A4F6CB278B562400BA92EF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		33A4F6D1278B5AAF00BA92EF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		33A4F6D3278B600E00BA92EF /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		33BA84CF28733886008A4FF6 /* StocksNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksNew.swift; sourceTree = "<group>"; };
 		33D9BFF6284926BB001C904F /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
 		33D9BFF8284A5270001C904F /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		33D9BFFA28535959001C904F /* DividendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendsViewController.swift; sourceTree = "<group>"; };
 		33D9BFFC2853596A001C904F /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		33D9BFFE285359F6001C904F /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		33D9C0002854F504001C904F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		33E764A5285FBB5200B8B9DB /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
 		33FDB589285A1F49000ED1A0 /* DivDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DivDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33FDB58B285A1F49000ED1A0 /* DivDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivDiaryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +157,8 @@
 				33D9BFF6284926BB001C904F /* Stocks.swift */,
 				33D9BFF8284A5270001C904F /* Stock.swift */,
 				33D9C0002854F504001C904F /* User.swift */,
+				3322DACE286488C900838580 /* Test.swift */,
+				33BA84CF28733886008A4FF6 /* StocksNew.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -175,6 +185,7 @@
 		333C827327888448006B9407 /* DivDiary */ = {
 			isa = PBXGroup;
 			children = (
+				33E764A2285F9AE200B8B9DB /* ViewModels */,
 				333C827627888448006B9407 /* SceneDelegate.swift */,
 				333C827427888448006B9407 /* AppDelegate.swift */,
 				3329CADA283E220300FF815E /* Helpers */,
@@ -209,6 +220,15 @@
 				33D9BFFE285359F6001C904F /* AccountViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		33E764A2285F9AE200B8B9DB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				33E764A5285FBB5200B8B9DB /* StockView.swift */,
+				3322DACA28610C7D00838580 /* DividendView.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		33FDB58A285A1F49000ED1A0 /* DivDiaryTests */ = {
@@ -356,16 +376,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D9BFFD2853596A001C904F /* PortfolioViewController.swift in Sources */,
+				33E764A6285FBB5200B8B9DB /* StockView.swift in Sources */,
 				33A4F6D4278B600E00BA92EF /* StartScreenViewController.swift in Sources */,
 				33D9BFFF285359F6001C904F /* AccountViewController.swift in Sources */,
 				33D9BFFB28535959001C904F /* DividendsViewController.swift in Sources */,
+				3322DACB28610C7D00838580 /* DividendView.swift in Sources */,
 				33A4F6D2278B5AAF00BA92EF /* SignUpViewController.swift in Sources */,
 				333C828D27888904006B9407 /* LogInnView.swift in Sources */,
 				333C827927888448006B9407 /* HomeViewController.swift in Sources */,
 				33D9BFF7284926BB001C904F /* Stocks.swift in Sources */,
 				33D9C0012854F505001C904F /* User.swift in Sources */,
+				3322DACF286488C900838580 /* Test.swift in Sources */,
 				333C827527888448006B9407 /* AppDelegate.swift in Sources */,
 				333C828B2788874E006B9407 /* SecondViewController.swift in Sources */,
+				33BA84D028733886008A4FF6 /* StocksNew.swift in Sources */,
 				3329CADC283E221E00FF815E /* Utilities.swift in Sources */,
 				333C827727888448006B9407 /* SceneDelegate.swift in Sources */,
 				33D9BFF9284A5270001C904F /* Stock.swift in Sources */,

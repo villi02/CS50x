@@ -1,5 +1,7 @@
 
 import UIKit
+import Firebase
+import FirebaseDatabaseSwift
 
 class StartScreenViewController: UIViewController {
 
@@ -17,8 +19,18 @@ class StartScreenViewController: UIViewController {
     
     func setUpElements() {
         view.backgroundColor = .systemRed
-        testStockAPI(symbol: "O")
+        testStockAPI(symbol: "AAPL")
+        view.backgroundColor = .systemPink
+        print(User.portfolio)
         
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        
+        ref.child("users").child("buUuCUD0gsJgzfthVmXM").observeSingleEvent(of: .value, with: {(snapshot) in
+            print(snapshot.value as! [String: AnyObject])
+        })
+        
+       // self.ref.child("users").child()
     }
   
 
