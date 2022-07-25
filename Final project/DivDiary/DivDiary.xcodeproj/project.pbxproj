@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3317C840287DD3E7002EF9F9 /* TabBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3317C83F287DD3E7002EF9F9 /* TabBars.swift */; };
+		3317C843287E1BF8002EF9F9 /* StockTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3317C841287E1BF0002EF9F9 /* StockTVC.swift */; };
 		3322DACB28610C7D00838580 /* DividendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3322DACA28610C7D00838580 /* DividendView.swift */; };
-		3322DACF286488C900838580 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3322DACE286488C900838580 /* Test.swift */; };
 		3329CADC283E221E00FF815E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3329CADB283E221E00FF815E /* Utilities.swift */; };
 		3329CADE283E381300FF815E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3329CADD283E381300FF815E /* GoogleService-Info.plist */; };
 		3329CAE1283E439100FF815E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3329CAE0283E439100FF815E /* FirebaseAnalytics */; };
@@ -50,6 +51,7 @@
 		33A4F6CD278B563B00BA92EF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A4F6CB278B562400BA92EF /* libsqlite3.tbd */; };
 		33A4F6D2278B5AAF00BA92EF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4F6D1278B5AAF00BA92EF /* SignUpViewController.swift */; };
 		33A4F6D4278B600E00BA92EF /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4F6D3278B600E00BA92EF /* StartScreenViewController.swift */; };
+		33A579662878EED7005A465A /* PortfolioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A579652878EED7005A465A /* PortfolioManager.swift */; };
 		33BA84D028733886008A4FF6 /* StocksNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BA84CF28733886008A4FF6 /* StocksNew.swift */; };
 		33D9BFF7284926BB001C904F /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFF6284926BB001C904F /* Stocks.swift */; };
 		33D9BFF9284A5270001C904F /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9BFF8284A5270001C904F /* Stock.swift */; };
@@ -72,8 +74,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3317C83F287DD3E7002EF9F9 /* TabBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBars.swift; sourceTree = "<group>"; };
+		3317C841287E1BF0002EF9F9 /* StockTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTVC.swift; sourceTree = "<group>"; };
 		3322DACA28610C7D00838580 /* DividendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendView.swift; sourceTree = "<group>"; };
-		3322DACE286488C900838580 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		3329CADB283E221E00FF815E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3329CADD283E381300FF815E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3329CB162841480B00FF815E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 		33A4F6CB278B562400BA92EF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		33A4F6D1278B5AAF00BA92EF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		33A4F6D3278B600E00BA92EF /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		33A579652878EED7005A465A /* PortfolioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioManager.swift; sourceTree = "<group>"; };
 		33BA84CF28733886008A4FF6 /* StocksNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksNew.swift; sourceTree = "<group>"; };
 		33D9BFF6284926BB001C904F /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
 		33D9BFF8284A5270001C904F /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
@@ -152,13 +156,15 @@
 		3329CADA283E220300FF815E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				3317C841287E1BF0002EF9F9 /* StockTVC.swift */,
 				3329CADB283E221E00FF815E /* Utilities.swift */,
 				3329CB162841480B00FF815E /* Constants.swift */,
 				33D9BFF6284926BB001C904F /* Stocks.swift */,
 				33D9BFF8284A5270001C904F /* Stock.swift */,
 				33D9C0002854F504001C904F /* User.swift */,
-				3322DACE286488C900838580 /* Test.swift */,
 				33BA84CF28733886008A4FF6 /* StocksNew.swift */,
+				33A579652878EED7005A465A /* PortfolioManager.swift */,
+				3317C83F287DD3E7002EF9F9 /* TabBars.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -377,7 +383,9 @@
 			files = (
 				33D9BFFD2853596A001C904F /* PortfolioViewController.swift in Sources */,
 				33E764A6285FBB5200B8B9DB /* StockView.swift in Sources */,
+				33A579662878EED7005A465A /* PortfolioManager.swift in Sources */,
 				33A4F6D4278B600E00BA92EF /* StartScreenViewController.swift in Sources */,
+				3317C843287E1BF8002EF9F9 /* StockTVC.swift in Sources */,
 				33D9BFFF285359F6001C904F /* AccountViewController.swift in Sources */,
 				33D9BFFB28535959001C904F /* DividendsViewController.swift in Sources */,
 				3322DACB28610C7D00838580 /* DividendView.swift in Sources */,
@@ -386,7 +394,7 @@
 				333C827927888448006B9407 /* HomeViewController.swift in Sources */,
 				33D9BFF7284926BB001C904F /* Stocks.swift in Sources */,
 				33D9C0012854F505001C904F /* User.swift in Sources */,
-				3322DACF286488C900838580 /* Test.swift in Sources */,
+				3317C840287DD3E7002EF9F9 /* TabBars.swift in Sources */,
 				333C827527888448006B9407 /* AppDelegate.swift in Sources */,
 				333C828B2788874E006B9407 /* SecondViewController.swift in Sources */,
 				33BA84D028733886008A4FF6 /* StocksNew.swift in Sources */,

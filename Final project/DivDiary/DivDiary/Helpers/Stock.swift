@@ -45,8 +45,10 @@ struct Stock {
     var isActivelyTrading: Bool
     var isAdr: Bool
     var isFund: Bool
+    var shareAmount: Int?
+    var purchasePrice: Double?
     
-    init(stockData:[String:Any] ) {
+    init(stockData:[String:Any], amountOfShares: Int? = nil, sharePrice: Double? = nil) {
         symbol = stockData["symbol"] as! String
         price = stockData["price"] as! Double
         beta = stockData["beta"] as! Double

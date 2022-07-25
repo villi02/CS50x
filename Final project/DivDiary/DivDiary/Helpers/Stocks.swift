@@ -50,6 +50,7 @@ func testStockAPI( symbol: String) {
         print("The CEO is:", ceoName)
          */
         
+        
         let jsonThird = try! JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.fragmentsAllowed) as! [[String:Any]]
         let symbol = json[0]["symbol"]! as! String
         print("The symbol is:", symbol)

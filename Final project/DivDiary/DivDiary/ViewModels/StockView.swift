@@ -11,7 +11,7 @@ import SwiftUI
 
 
 struct StockView: View {
-    //let stock: Stock
+    //PortfolioManager
     
     var body: some View {
         VStack( alignment: .leading) {
